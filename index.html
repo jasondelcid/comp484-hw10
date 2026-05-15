@@ -20,6 +20,7 @@
     <main>
       <section class="pet-image-container">
         <img class="pet-image" src="pixeldog.png" alt="Cute pet dog">
+        <img src="missing-image.png" alt="Intentional 404 test image" style="display: none;">
       </section>
 
       <section class="dashboard">
@@ -36,6 +37,8 @@
           <button class="play-button">Play</button>
           <button class="exercise-button">Exercise</button>
           <button class="nap-button">Nap</button>
+          <button onclick="causeTypeError()">Cause TypeError</button>
+          <button onclick="causeViolation()">Cause Violation</button>
         </div>
       </section>
     </main>

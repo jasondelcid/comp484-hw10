@@ -121,3 +121,55 @@ function bouncePet() {
     .animate({ marginTop: "-15px" }, 150)
     .animate({ marginTop: "0px" }, 150);
 }
+
+/* =====================================
+   Chrome DevTools Assignment Examples
+   ===================================== */
+
+// Message Logging
+console.log("Message Logging: Giga Pet project loaded.");
+
+// Log Info
+console.info("Log Info: Pet information has been initialized.");
+
+// Log Warning
+console.warn("Log Warning: Pet stats should not go below zero.");
+
+// Log Error
+console.error("Log Error: Example error message for DevTools practice.");
+
+// Log Table
+console.table(pet_info);
+
+// Log Group
+console.group("Log Group: Pet Information");
+console.log("Name:", pet_info.name);
+console.log("Weight:", pet_info.weight);
+console.log("Happiness:", pet_info.happiness);
+console.log("Energy:", pet_info.energy);
+console.groupEnd();
+
+// Log Custom
+console.log(
+  "%cLog Custom: Mochi is ready to play!",
+  "color: purple; font-size: 18px; font-weight: bold;"
+);
+
+/* =====================================
+   Intentional DevTools Error Examples
+   ===================================== */
+
+// Cause TypeError
+function causeTypeError() {
+  let brokenPet = null;
+  console.log(brokenPet.name);
+}
+
+// Cause Violation
+function causeViolation() {
+  let start = Date.now();
+
+  while (Date.now() - start < 200) {
+    // Intentionally slowing down the browser for DevTools violation practice
+  }
+}
